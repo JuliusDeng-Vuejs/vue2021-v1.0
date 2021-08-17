@@ -10,7 +10,7 @@
 			<div v-if="n === 2">React</div>
 			<div v-if="n === 3">Vue</div>
 			
-#		注：template不会增加页面结构，但只能与v-if 结合使用，不能与v-show结合使用（不生效）github
+#		注：template不会增加页面结构，但只能与v-if 结合使用，不能与v-show结合使用（不生效）
 	#		
 	#		条件渲染：
 							1.v-if
