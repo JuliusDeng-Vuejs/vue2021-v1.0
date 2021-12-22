@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>回顾Object.defineproperty方法</title>
+	</head>
+	<body>
+		<script type="text/javascript" >
+			let number = 12
+			let person = {
+				name: '邓宇辰',
+				sex: '男',
+			}
+			
+			Object.defineProperty(person, 'age', {
+				// value: 15,
+				// 当age被读取时调用，返回值就是age的值
+				get() {
+					return number
+				},
+				// 当age被修改时调用，且接收的形参的就是修改之后的值
+				set(value) {
+					console.log('set：', value);
+					// 因为age的值是getter决定的，所以这里你必须把getter里的返回值给修改了，属性age的值才会被修改！
+					// number = '你猜'
+					number = value
+				}
+				
+				
+			})
+			
+			console.log(11, person);
+			
+			
+		</script>
+	</body>
+</html>

@@ -172,7 +172,7 @@
     1. SessionStorage存储的内容会随着浏览器窗口关闭而消失。
     2. LocalStorage存储的内容，需要手动清除才会消失。
     3. ```xxxxxStorage.getItem(xxx)```如果xxx对应的value获取不到，那么getItem的返回值是null。
-    4. ```JSON.parse(null)```的结果依然是null。
+    4. ```JSON. parse(null)```的结果依然是null。
 
 ## 组件的自定义事件
 
@@ -705,7 +705,8 @@ module.exports = {
 
    ```js
    //引入VueRouter
-   import VueRouter from 'vue-router'
+   import 
+   from 'vue-router'
    //引入Luyou 组件
    import About from '../components/About'
    import Home from '../components/Home'
@@ -893,7 +894,7 @@ module.exports = {
    <router-link 
    	:to="{
    		name:'xiangqing',
-   		params:{
+   		paramsparamsparams:{
    		   id:666,
                title:'你好'
    		}
@@ -1067,5 +1068,5 @@ module.exports = {
    1. 地址干净，美观 。
    2. 兼容性和hash模式相比略差。
    3. 应用部署上线时需要后端人员支持，解决刷新页面服务端404的问题。
-	 
+	
 	 
